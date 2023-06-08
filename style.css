@@ -1,0 +1,345 @@
+@font-face {
+    font-family: ggsans-bold;
+    src: url(./fonts/ggsans-Bold.ttf);
+}
+
+@font-face {
+    font-family: ggsans-normal;
+    src: url(./fonts/ggsans-Normal.ttf);
+}
+
+@font-face {
+    font-family: ggsans-semibold;
+    src: url(./fonts/ggsans-Semibold.ttf);
+}
+
+body{
+    background-color:#2c2f33 ;
+}
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .main {
+    margin-top: 20%;
+    text-align: left;
+  }
+  
+h1 {
+    color: white;
+    font-size: 50px;
+    font-family: 'ggsans-bold';
+}
+
+h2 {
+    color: #99aab5;
+    font-size: 25px;
+    font-family: 'ggsans-normal';
+}
+
+h3 {
+    color: white;
+    font-size: 30px;
+    font-family: 'ggsans-normal';
+}
+
+.highlight{
+    color: #7289da;
+}
+
+section{
+    height: 100vh;
+    min-height: 100vh;
+}
+
+#home{
+    height: 90vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#about-me{
+  height: 75vh;
+  min-height: 75vh;
+  width: auto;
+}
+
+#projects{
+  height: 175vh;
+  min-height: 75vh;
+  width: auto;
+}
+
+.talks {
+    padding-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .discord-message-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 8%;
+    background-color: #23272a;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 60%;
+    border: 3px #23272a solid;
+    border-radius: 8px;
+  }
+  
+  .discord-message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 100%;
+
+  }
+
+  .discord-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+    margin-left: 10px; /* Add margin on the left side */
+  }
+
+  .discord-avatar:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .discord-message-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+
+  .discord-username {
+    font-family: 'ggsans-semibold';
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .discord-username:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .discord-time-sent {
+    font-family: 'ggsans-semibold';
+    color: gray;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  .discord-time-sent:hover {
+    cursor:default
+  }
+
+  .discord-message-text {
+    font-family: 'ggsans-normal';
+    margin-top: 5px;
+    font-size: 18px;
+  }
+
+  .discord-message-text-link {
+    font-family: 'ggsans-normal';
+    margin-top: 5px;
+    font-size: 18px;
+    color: #00a2f3;
+  }
+
+  .discord-message-text-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .discord-embed {
+    display: flex;
+    flex-direction: column;
+    background-color: #2b2d31;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 40%;
+    position: relative; /* Add position relative */
+  }
+  
+  .discord-embed::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px; /* Adjust the width of the colored bar as needed */
+    height: 100%; /* Make the colored bar cover the entire height */
+    background-color: #814ae7; /* Set the desired color for the bar */
+    border-top-left-radius: 8px; /* Match the border radius of the embed */
+    border-bottom-left-radius: 8px;
+  }
+  
+  .discord-embed-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  
+  .discord-embed-title {
+    font-family: 'ggsans-semibold';
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    margin-top: 7px;
+  }
+  
+  .discord-embed-description {
+    font-family: 'ggsans-normal';
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  
+  .discord-embed-footer {
+    font-family: 'ggsans-normal';
+    font-size: 12px;
+    color: #9fa2a8;
+    margin-top: auto;
+  }
+  
+  .discord-embed-footer-text {
+    margin-top: 5px;
+  }
+  
+  .discord-embed-footer-text a {
+    color: #9fa2a8;
+    text-decoration: none;
+  }
+  
+  .discord-embed-footer-text a:hover {
+    text-decoration: underline;
+  }
+  
+  .discord-embed-thumbnail {
+    margin-top: 10px;
+    max-width: 100%; /* Limits the image width to the container width */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .discord-embed-thumbnail img {
+    width: 100%;
+    border-radius: 3px;
+  }
+
+  .footer {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5563e9;
+  color: #ffffff;
+  padding: 4px;
+  text-align: center;
+  border-radius: 8px;
+  border: #5563e9 3px solid;
+  width: 75%;
+  margin: 20px auto 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added transition for transform property */
+  opacity: 1; /* Initially visible */
+  transform: translateY(0); /* Initially in view */
+  }
+
+  .new-message{
+    color: white;
+    font-family: 'ggsans-normal';
+    margin-left: 0;
+  }
+
+.footer-link {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffffff;
+  width: 100%;;
+}
+
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-0%, 10vh);
+  }
+
+  .discord-message-2 {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+  .custom-emoji {
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+  }
+
+  .emoji {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+  }
+
+.emoji:hover {
+  cursor: pointer;
+}
+
+.emoji .emoji-tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #111214;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.emoji .emoji-tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #111214 transparent transparent transparent;
+}
+
+.emoji:hover .emoji-tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}
